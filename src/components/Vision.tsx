@@ -16,7 +16,7 @@ const Vision = () => {
       <div className="absolute top-20 right-10 w-60 h-60 rounded-full bg-velatrix-blue/10 blur-3xl"></div>
       
       <div className="container relative z-10 mx-auto px-4 md:px-8">
-        <div className="max-w-5xl mx-auto rounded-2xl shadow-2xl shadow-slate-950 bg-gradient-to-b from-velatrix-gray/20 to-velatrix-gray2/20 border border-velatrix-blue/20">
+        <div className="max-w-5xl mx-auto rounded-2xl shadow-2xl shadow-slate-950 border border-velatrix-blue/20 cyber-card-border-vision">
           <div className="animate-border px-10 p-4">
 
           <div
