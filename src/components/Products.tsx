@@ -3,8 +3,8 @@ import { GitHubLogoIcon, VideoIcon } from "@radix-ui/react-icons";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
-import {Database, Film, XIcon} from "lucide-react";
-
+import XIcon from '@/components/icons/XIcon';
+import MediumIcon from '@/components/icons/MediumIcon';
 const Products = () => {
   return (
       <section id="products" className="py-40 bg-velatrix-darkBlue relative">
@@ -83,17 +83,14 @@ const Products = () => {
                   Explore Platform
                 </a>
               </Button>
-              <div>
-                <Button variant="outline" size="sm" className="border-velatrix-blue text-velatrix-blue bg-transparent hover:bg-velatrix-blue/10 mr-2">
-                  <a href="https://x.com/watchit_app" target="_blank" rel="noreferrer" aria-label="GitHub">
-                    <XIcon className="h-5 w-5"/>
-                  </a>
-                </Button>
-                <Button variant="outline" size="sm" className="border-velatrix-blue text-velatrix-blue bg-transparent hover:bg-velatrix-blue/10">
-                  <a href="#" target="_blank" rel="noreferrer" aria-label="GitHub">
-                    <img src="/src/assets/images/brand-medium.svg" alt="Vision" className="w-28 h-28 object-cover"/>
-                  </a>
-                </Button>
+              <div className="flex space-x-4">
+                <a href="https://x.com/watchit_app" target="_blank" rel="noreferrer" aria-label="X" className="text-white group/x">
+                  <XIcon className="w-8 h-8 group-hover/x:text-gray-400" />
+                </a>
+
+                <a href="#" target="_blank" rel="noreferrer" aria-label="Medium" className="text-white group/medium">
+                  <MediumIcon className="w-8 h-8 group-hover/medium:text-gray-400" />
+                </a>
               </div>
             </CardFooter>
           </Card>
