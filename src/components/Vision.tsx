@@ -16,53 +16,52 @@ const Vision = () => {
       <div className="absolute bottom-10 left-10 w-80 h-80 rounded-full bg-velatrix-purple/10 blur-3xl"></div>
       <div className="absolute top-20 right-10 w-60 h-60 rounded-full bg-velatrix-blue/10 blur-3xl"></div>
 
-      <div id="parent" className="container z-10 mx-auto px-4 md:px-8 overflow-hidden">
-        <div className="max-w-5xl mx-auto rounded-2xl shadow-2xl shadow-slate-950 border border-velatrix-blue/20 cyber-card-border-vision relative">
-          <div className='absolute top-0 left-0 w-full z-40'>
+      <div id="parent" className="container z-10 mx-auto px-0 md:px-8 overflow-hidden">
+        <div className="max-w-5xl mx-auto rounded-2xl relative">
+          <div className='absolute top-0 left-0 w-full z-10'>
             <img src="/src/assets/images/vision-top.svg" alt="Vision" className="w-full h-28 object-cover" />
           </div>
 
-          <div className="animate-border px-10 p-4">
+          <div className="px-10 p-4">
+            <div
+                className="flex relative w-full items-center justify-center mt-8 z-20">
+              <Badge className="mb-8 bg-gray-500 text-velatrix-blue hover:bg-velatrix-blue/30">Our Vision</Badge>
+            </div>
 
-          <div
-              className="flex relative w-full items-center justify-center mt-8 z-50">
-            <Badge className="mb-8 bg-gray-500 text-velatrix-blue hover:bg-velatrix-blue/30">Our Vision</Badge>
-          </div>
+            <h2 className="text-xl md:text-5xl font-bold mb-10 md:px-24 leading-tight ">
+              <span className="text-gradient text-center block mt-2">The future of content is a fairer, decentralized, creator-first media economy.</span>
+            </h2>
 
-          <h2 className="text-xl md:text-5xl font-bold mb-10 md:px-24 leading-tight ">
-            <span className="text-gradient text-center block mt-2">The future of content is a fairer, decentralized, creator-first media economy.</span>
-          </h2>
-
-          <div className="space-y-6 text-lg">
-            <p className="text-velatrix-gray2 text-center">
-              We are building infrastructure for the next era of digital content. Tools for creators to truly own their work, define their revenue models, and connect directly with audiences in an environment that incentivizes content quality over virality.
-            </p>
-
-            <div className="pl-4 border-l-2 border-velatrix-blue my-8 opacity-90 py-4">
-              <p className="italic text-xl">
-                "At Velatrix, we believe in a digital ecosystem where creators have true autonomy, transparent compensation, and direct relationships with their audiences."
+            <div className="space-y-6 text-lg">
+              <p className="text-velatrix-gray2 text-center">
+                We are building infrastructure for the next era of digital content. Tools for creators to truly own their work, define their revenue models, and connect directly with audiences in an environment that incentivizes content quality over virality.
               </p>
-            </div>
 
-            <div className="space-y-4 mt-16 opacity-70 pl-8">
-              <div className="flex items-start">
-                <CheckCheck className="text-velatrix-blue mr-3 h-6 w-6 mt-0.5 flex-shrink-0" />
-                <p>Creator-owned intellectual property with blockchain verification and protection</p>
+              <div className="pl-4 border-l-2 border-velatrix-blue my-8 opacity-90 py-4">
+                <p className="italic text-xl">
+                  "At Velatrix, we believe in a digital ecosystem where creators have true autonomy, transparent compensation, and direct relationships with their audiences."
+                </p>
               </div>
-              <div className="flex items-start">
-                <CheckCheck className="text-velatrix-blue mr-3 h-6 w-6 mt-0.5 flex-shrink-0" />
-                <p>Transparent revenue models without intermediaries taking excessive cuts</p>
-              </div>
-              <div className="flex items-start">
-                <CheckCheck className="text-velatrix-blue mr-3 h-6 w-6 mt-0.5 flex-shrink-0" />
-                <p>Direct creator-audience connections free from algorithmic manipulation</p>
-              </div>
-              <div className="flex items-start pb-6">
-                <CheckCheck className="text-velatrix-blue mr-3 h-6 w-6 mt-0.5 flex-shrink-0" />
-                <p>Content discovery based on quality rather than engagement metrics alone</p>
+
+              <div className="space-y-4 mt-16 opacity-70 pl-8">
+                <div className="flex items-start">
+                  <CheckCheck className="text-velatrix-blue mr-3 h-6 w-6 mt-0.5 flex-shrink-0" />
+                  <p>Creator-owned intellectual property with blockchain verification and protection</p>
+                </div>
+                <div className="flex items-start">
+                  <CheckCheck className="text-velatrix-blue mr-3 h-6 w-6 mt-0.5 flex-shrink-0" />
+                  <p>Transparent revenue models without intermediaries taking excessive cuts</p>
+                </div>
+                <div className="flex items-start">
+                  <CheckCheck className="text-velatrix-blue mr-3 h-6 w-6 mt-0.5 flex-shrink-0" />
+                  <p>Direct creator-audience connections free from algorithmic manipulation</p>
+                </div>
+                <div className="flex items-start pb-6">
+                  <CheckCheck className="text-velatrix-blue mr-3 h-6 w-6 mt-0.5 flex-shrink-0" />
+                  <p>Content discovery based on quality rather than engagement metrics alone</p>
+                </div>
               </div>
             </div>
-          </div>
           </div>
         </div>
       </div>
