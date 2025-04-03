@@ -33,7 +33,7 @@ const Vision = () => {
               We are building infrastructure for the next era of digital content. Tools for creators to truly own their work, define their revenue models, and connect directly with audiences in an environment that incentivizes content quality over virality.
             </p>
             
-            <div className="pl-4 border-l-2 border-velatrix-blue my-8 opacity-90 bg-white/20 rounded-[5px] py-4">
+            <div className="pl-4 border-l-2 border-velatrix-blue my-8 opacity-90 py-4">
               <p className="italic text-xl">
                 "At Velatrix, we believe in a digital ecosystem where creators have true autonomy, transparent compensation, and direct relationships with their audiences."
               </p>

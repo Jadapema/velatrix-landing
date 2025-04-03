@@ -3,7 +3,7 @@ import { GitHubLogoIcon, VideoIcon } from "@radix-ui/react-icons";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
-import { Database, Film } from "lucide-react";
+import {Database, Film, XIcon} from "lucide-react";
 
 const Products = () => {
   return (
@@ -76,22 +76,30 @@ const Products = () => {
               </p>
             </CardContent>
             <CardFooter className="flex justify-between">
-              <Button variant="outline" size="sm" className="border-velatrix-blue text-velatrix-blue bg-transparent hover:bg-velatrix-blue/10">
+              <Button variant="outline" size="sm"
+                      className="border-velatrix-blue text-velatrix-blue bg-transparent hover:bg-velatrix-blue/10">
                 <a href="https://watchit.movie" target="_blank" rel="noreferrer" className="flex items-center">
                   <VideoIcon className="mr-2 h-4 w-4"/>
                   Explore Platform
                 </a>
               </Button>
-              <Button variant="ghost" size="sm" className="bg-transparent hover:bg-velatrix-blue/10">
-                <a href="https://medium.com/@watchit.app" target="_blank" rel="noreferrer" className="text-sm text-gray-400 hover:text-white transition-colors">
-                  Read Our Vision
-                </a>
-              </Button>
+              <div>
+                <Button variant="outline" size="sm" className="border-velatrix-blue text-velatrix-blue bg-transparent hover:bg-velatrix-blue/10 mr-2">
+                  <a href="https://x.com/watchit_app" target="_blank" rel="noreferrer" aria-label="GitHub">
+                    <XIcon className="h-5 w-5"/>
+                  </a>
+                </Button>
+                <Button variant="outline" size="sm" className="border-velatrix-blue text-velatrix-blue bg-transparent hover:bg-velatrix-blue/10">
+                  <a href="#" target="_blank" rel="noreferrer" aria-label="GitHub">
+                    <img src="/src/assets/images/brand-medium.svg" alt="Vision" className="w-28 h-28 object-cover"/>
+                  </a>
+                </Button>
+              </div>
             </CardFooter>
           </Card>
         </div>
-      </div>
-    </section>
+        </div>
+      </section>
   );
 };
 

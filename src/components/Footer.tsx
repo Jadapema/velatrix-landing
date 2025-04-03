@@ -13,12 +13,15 @@ const Footer = () => {
             <p className="text-sm text-gray-400 max-w-sm">
               Web3 technology company providing solutions for intellectual property management and monetization.
             </p>
+            <p className="text-sm text-gray-500 mt-8">
+              &copy; {new Date().getFullYear()} Velatrix. All rights reserved.
+            </p>
           </div>
 
           <div className="grid grid-cols-2 md:flex gap-8 md:gap-16 w-full px-8 md:px-0 md:w-auto">
             <div>
-              <h3 className="text-sm font-medium text-velatrix-blue mb-4 uppercase tracking-wider">Products</h3>
-              <ul className="space-y-3">
+            <h3 className="text-sm font-medium text-velatrix-blue mb-4 uppercase tracking-wider">Products</h3>
+              <ul className="space-y-1">
                 <li>
                   <a href="https://github.com/Synaps3Protocol" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-white transition-colors">
                     Synapse Protocol
@@ -33,7 +36,7 @@ const Footer = () => {
             </div>
             <div>
               <h3 className="text-sm font-medium text-velatrix-blue mb-4 uppercase tracking-wider">Resources</h3>
-              <ul className="space-y-3">
+              <ul className="space-y-1">
                 <li>
                   <a href="https://medium.com/@watchit.app" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-white transition-colors">
                     Blog
@@ -44,26 +47,13 @@ const Footer = () => {
                     Documentation
                   </a>
                 </li>
+                <li>
+                  <a href="https://www.linkedin.com/company/velatrix/" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-white transition-colors">
+                    Linkedin
+                  </a>
+                </li>
               </ul>
             </div>
-          </div>
-        </div>
-        
-        <div className="mt-12 pt-8 border-t border-velatrix-blue/10 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-sm text-gray-500">
-            &copy; {new Date().getFullYear()} Velatrix. All rights reserved.
-          </p>
-          
-          <div className="flex space-x-4 mt-4 md:mt-0">
-            <a href="#" target="_blank" rel="noreferrer" className="text-gray-500 hover:text-velatrix-blue transition-colors" aria-label="Twitter">
-              <TwitterLogoIcon className="h-5 w-5" />
-            </a>
-            <a href="#" target="_blank" rel="noreferrer" className="text-gray-500 hover:text-velatrix-blue transition-colors" aria-label="GitHub">
-              <GitHubLogoIcon className="h-5 w-5" />
-            </a>
-            <a href="#" target="_blank" rel="noreferrer" className="text-gray-500 hover:text-velatrix-blue transition-colors" aria-label="LinkedIn">
-              <LinkedInLogoIcon className="h-5 w-5" />
-            </a>
           </div>
         </div>
       </div>
