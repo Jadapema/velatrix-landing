@@ -2,8 +2,10 @@
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { useSmoothScroll } from "@/hooks/use-smooth-scroll";
 
 const Hero = () => {
+    const { handleLinkClick } = useSmoothScroll({ offset: 80 });
   return (
       <div className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
         {/* Background elements */}
@@ -47,7 +49,7 @@ const Hero = () => {
           </div>
         </div>
         <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <a href="#products" aria-label="Scroll down">
+          <a href="#products" onClick={(e) => handleLinkClick(e, 'products')} aria-label="Scroll down">
             <ArrowRight className="h-8 w-8 rotate-90 text-velatrix-blue"/>
           </a>
         </div>
