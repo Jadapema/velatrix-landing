@@ -68,7 +68,7 @@ const Vision = () => {
       </div>
 
       <div className="mt-24 pt-10 text-center opacity-90">
-        <h3 className="text-2xl font-bold mb-4">Owned by creators. Powered by fans. Enabled by Velatrix.</h3>
+        <h3 className="text-2xl font-bold mb-4 px-4 md:px-0">Owned by creators. Powered by fans. Enabled by Velatrix.</h3>
         <a
             href={LandingLinks.medium.link}
             target="_blank"

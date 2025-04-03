@@ -14,7 +14,7 @@ const Footer = () => {
             <p className="text-sm text-gray-400 max-w-sm">
               Web3 technology company providing solutions for intellectual property management and monetization.
             </p>
-            <p className="text-sm text-gray-500 mt-8">
+            <p className="hidden md:block text-sm text-gray-500 mt-8">
               &copy; {new Date().getFullYear()} Velatrix. All rights reserved.
             </p>
           </div>
@@ -56,6 +56,9 @@ const Footer = () => {
               </ul>
             </div>
           </div>
+          <p className="md:hidden text-sm text-left text-gray-500 mt-8">
+            &copy; {new Date().getFullYear()} Velatrix. All rights reserved.
+          </p>
         </div>
       </div>
     </footer>
