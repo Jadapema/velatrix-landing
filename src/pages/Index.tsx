@@ -16,7 +16,6 @@ const Index = () => {
       <Vision />
        <GradientDivider />
       <Footer />
-        <GradientDivider />
     </div>
   );
 };
