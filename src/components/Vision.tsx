@@ -2,6 +2,7 @@
 import React from 'react';
 import { Badge } from "@/components/ui/badge";
 import { ArrowRight, CheckCheck } from "lucide-react";
+import {LandingLinks} from "@/lib/utils.ts";
 
 const Vision = () => {
   return (
@@ -68,7 +69,7 @@ const Vision = () => {
       <div className="mt-24 pt-10 text-center opacity-90">
         <h3 className="text-2xl font-bold mb-4">Owned by creators. Powered by fans. Enabled by Velatrix.</h3>
         <a
-            href="https://medium.com/@watchit.app"
+            href={LandingLinks.medium.link}
             target="_blank"
             rel="noreferrer"
             className="inline-flex items-center text-white/80 hover:text-white hover:underline mt-2"

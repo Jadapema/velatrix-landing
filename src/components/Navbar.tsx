@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { useSmoothScroll } from "@/hooks/use-smooth-scroll";
+import {LandingLinks} from "@/lib/utils.ts";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -42,9 +43,9 @@ const Navbar = () => {
                       <div className="flex flex-col space-y-4 px-6">
                         <a href="#products" onClick={(e) => handleLinkClick(e, 'products')} className="text-foreground hover:text-velatrix-blue transition-colors">Products</a>
                         <a href="#vision" onClick={(e) => handleLinkClick(e, 'vision')} className="text-foreground hover:text-velatrix-blue transition-colors">Vision</a>
-                        <a href="https://watchit.movie" target="_blank" rel="noreferrer" className="text-foreground hover:text-velatrix-blue transition-colors">Platform</a>
+                        <a href={LandingLinks.watchitMovie.link} target="_blank" rel="noreferrer" className="text-foreground hover:text-velatrix-blue transition-colors">Platform</a>
                         <Button variant="outline" className="border-velatrix-blue text-velatrix-blue hover:bg-velatrix-blue/10">
-                          <a href="https://github.com/Synaps3Protocol" target="_blank" rel="noreferrer">
+                          <a href={LandingLinks.github.link} target="_blank" rel="noreferrer">
                             GitHub
                           </a>
                         </Button>
@@ -56,9 +57,9 @@ const Navbar = () => {
               <div className="flex items-center space-x-8">
                 <a href="#products" onClick={(e) => handleLinkClick(e, 'products')} className="text-foreground hover:text-velatrix-blue transition-colors">Products</a>
                 <a href="#vision" onClick={(e) => handleLinkClick(e, 'vision')} className="text-foreground hover:text-velatrix-blue transition-colors">Vision</a>
-                <a href="https://watchit.movie" target="_blank" rel="noreferrer" className="text-foreground hover:text-velatrix-blue transition-colors">Platform</a>
+                <a href={LandingLinks.watchitMovie.link} target="_blank" rel="noreferrer" className="text-foreground hover:text-velatrix-blue transition-colors">Platform</a>
                 <Button variant="outline" className="border-velatrix-blue text-velatrix-blue hover:bg-velatrix-blue/10">
-                  <a href="https://github.com/Synaps3Protocol" target="_blank" rel="noreferrer">
+                  <a href={LandingLinks.github.link} target="_blank" rel="noreferrer">
                     GitHub
                   </a>
                 </Button>

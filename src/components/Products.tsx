@@ -5,6 +5,7 @@ import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
 import XIcon from '@/components/icons/XIcon';
 import MediumIcon from '@/components/icons/MediumIcon';
+import {LandingLinks} from "@/lib/utils.ts";
 const Products = () => {
   return (
       <section id="products" className="py-40 bg-velatrix-darkBlue relative">
@@ -47,11 +48,17 @@ const Products = () => {
             </CardContent>
             <CardFooter className="flex justify-between">
               <Button variant="outline" size="sm" className="border-velatrix-blue text-velatrix-blue bg-transparent hover:bg-velatrix-blue/10">
-                <a href="https://github.com/Synaps3Protocol" target="_blank" rel="noreferrer" className="flex items-center">
+                <a href={LandingLinks.github.link} target="_blank" rel="noreferrer" className="flex items-center">
                   <GitHubLogoIcon className="mr-2 h-4 w-4" />
                   Protocol Repository
                 </a>
               </Button>
+
+              <div className="flex space-x-4 items-center">
+                <a href={LandingLinks.xSynapse.link} target="_blank" rel="noreferrer" aria-label="X" className="text-white opacity-60 group/x">
+                  <XIcon className="w-[20px] h-[20px] group-hover/x:text-gray-400" />
+                </a>
+              </div>
             </CardFooter>
           </Card>
           
@@ -78,18 +85,18 @@ const Products = () => {
             <CardFooter className="flex justify-between">
               <Button variant="outline" size="sm"
                       className="border-velatrix-blue text-velatrix-blue bg-transparent hover:bg-velatrix-blue/10">
-                <a href="https://watchit.movie" target="_blank" rel="noreferrer" className="flex items-center">
+                <a href={LandingLinks.watchitMovie.link} target="_blank" rel="noreferrer" className="flex items-center">
                   <VideoIcon className="mr-2 h-4 w-4"/>
                   Explore Platform
                 </a>
               </Button>
-              <div className="flex space-x-4">
-                <a href="https://x.com/watchit_app" target="_blank" rel="noreferrer" aria-label="X" className="text-white group/x">
-                  <XIcon className="w-8 h-8 group-hover/x:text-gray-400" />
+              <div className="flex space-x-4 items-center">
+                <a href={LandingLinks.x.link} target="_blank" rel="noreferrer" aria-label="X" className="text-white opacity-60 group/x">
+                  <XIcon className="w-[20px] h-[20px] group-hover/x:text-gray-400" />
                 </a>
 
-                <a href="#" target="_blank" rel="noreferrer" aria-label="Medium" className="text-white group/medium">
-                  <MediumIcon className="w-8 h-8 group-hover/medium:text-gray-400" />
+                <a href={LandingLinks.medium.link} target="_blank" rel="noreferrer" aria-label="Medium" className="text-white opacity-60 group/medium">
+                  <MediumIcon className="w-[22px] h-[22px] group-hover/medium:text-gray-400" />
                 </a>
               </div>
             </CardFooter>

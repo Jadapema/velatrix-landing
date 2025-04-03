@@ -3,6 +3,7 @@ import React from 'react';
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { useSmoothScroll } from "@/hooks/use-smooth-scroll";
+import {LandingLinks} from "@/lib/utils.ts";
 
 const Hero = () => {
     const { handleLinkClick } = useSmoothScroll({ offset: 80 });
@@ -36,13 +37,13 @@ const Hero = () => {
           <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
             <Button size="lg"
                     className="bg-gradient-to-r from-velatrix-blue to-velatrix-blue hover:opacity-70 opacity-90 text-black font-medium">
-              <a href="https://watchit.movie" target="_blank" rel="noreferrer" className="flex items-center">
+              <a href={LandingLinks.watchitMovie.link} target="_blank" rel="noreferrer" className="flex items-center">
                 Explore Watchit
                 <ArrowRight className="ml-2 h-5 w-5"/>
               </a>
             </Button>
             <Button variant="outline" size="lg" className="border-velatrix-blue text-white opacity-90 hover:bg-velatrix-blue/10">
-              <a href="https://github.com/Synaps3Protocol" target="_blank" rel="noreferrer">
+              <a href={LandingLinks.github.link} target="_blank" rel="noreferrer">
                 View Protocol
               </a>
             </Button>

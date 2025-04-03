@@ -2,6 +2,7 @@
 import React from 'react';
 import { GitHubLogoIcon, LinkedInLogoIcon, TwitterLogoIcon } from "@radix-ui/react-icons";
 import GradientDivider from "@/components/ui/GradientDivider.tsx";
+import {LandingLinks} from "@/lib/utils.ts";
 
 const Footer = () => {
   return (
@@ -23,12 +24,12 @@ const Footer = () => {
             <h3 className="text-sm font-medium text-velatrix-blue mb-4 uppercase tracking-wider">Products</h3>
               <ul className="space-y-1">
                 <li>
-                  <a href="https://github.com/Synaps3Protocol" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-white transition-colors">
+                  <a href={LandingLinks.github.link} target="_blank" rel="noreferrer" className="text-gray-400 hover:text-white transition-colors">
                     Synapse Protocol
                   </a>
                 </li>
                 <li>
-                  <a href="https://watchit.movie" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-white transition-colors">
+                  <a href={LandingLinks.watchitMovie.link} target="_blank" rel="noreferrer" className="text-gray-400 hover:text-white transition-colors">
                     Watchit Platform
                   </a>
                 </li>
@@ -38,17 +39,17 @@ const Footer = () => {
               <h3 className="text-sm font-medium text-velatrix-blue mb-4 uppercase tracking-wider">Resources</h3>
               <ul className="space-y-1">
                 <li>
-                  <a href="https://medium.com/@watchit.app" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-white transition-colors">
+                  <a href={LandingLinks.medium.link} target="_blank" rel="noreferrer" className="text-gray-400 hover:text-white transition-colors">
                     Blog
                   </a>
                 </li>
                 <li>
-                  <a href="https://github.com/Synaps3Protocol" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-white transition-colors">
+                  <a href={LandingLinks.github.link} target="_blank" rel="noreferrer" className="text-gray-400 hover:text-white transition-colors">
                     Documentation
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.linkedin.com/company/velatrix/" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-white transition-colors">
+                  <a href={LandingLinks.linkedin.link} target="_blank" rel="noreferrer" className="text-gray-400 hover:text-white transition-colors">
                     Linkedin
                   </a>
                 </li>
