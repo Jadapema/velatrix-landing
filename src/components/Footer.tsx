@@ -14,7 +14,7 @@ const Footer = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 md:gap-16">
+          <div className="grid grid-cols-2 md:flex gap-8 md:gap-16 w-full px-8 md:px-0 md:w-auto">
             <div>
               <h3 className="text-sm font-medium text-velatrix-blue mb-4 uppercase tracking-wider">Products</h3>
               <ul className="space-y-3">

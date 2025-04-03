@@ -7,26 +7,26 @@ import { Database, Film } from "lucide-react";
 
 const Products = () => {
   return (
-    <section id="products" className="py-40 bg-velatrix-darkBlue relative">
-      {/* Background decorative elements */}
-      <div className="absolute inset-0 cyber-grid opacity-20"></div>
-      <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-velatrix-darkBlue to-transparent"></div>
-      <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-velatrix-dark to-transparent"></div>
-      
-      <div className="container mx-auto px-4 md:px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold mb-4">
-            <span className="text-gradient">Our Ecosystem</span>
-          </h2>
-          <p className="mt-6 text-lg md:text-xl lg:text-2xl text-velatrix-gray2 max-w-3xl mx-auto">
-            At the core of Velatrix, we're building a comprehensive ecosystem to revolutionize how creators manage,
-            monetize, and share their content.
-          </p>
-        </div>
+      <section id="products" className="py-40 bg-velatrix-darkBlue relative">
+        {/* Background decorative elements */}
+        <div className="absolute inset-0 cyber-grid opacity-20"></div>
+        <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-velatrix-darkBlue to-transparent"></div>
+        <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-velatrix-dark to-transparent"></div>
+
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-5xl font-bold mb-4">
+              <span className="text-gradient">Our Ecosystem</span>
+            </h2>
+            <p className="mt-6 text-lg md:text-xl lg:text-2xl text-velatrix-gray2 max-w-3xl mx-auto">
+              At the core of Velatrix, we're building a comprehensive ecosystem to revolutionize how creators manage,
+              monetize, and share their content.
+            </p>
+          </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {/* Synapse Card */}
-          <Card className="cyber-card overflow-hidden">
+          <Card className="cyber-card cyber-card-border-animated overflow-hidden">
             <CardHeader className="pb-4 flex align-middle justify-center text-center">
               <div className="flex items-center justify-between">
                 <img src="/src/assets/images/synapse.png" alt="Synapse logo" className="h-10"/>
@@ -56,7 +56,7 @@ const Products = () => {
           </Card>
           
           {/* Watchit Card */}
-          <Card className="cyber-card overflow-hidden">
+          <Card className="cyber-card cyber-card-border-animated overflow-hidden ">
             <CardHeader className="pb-4 flex align-middle justify-center text-center">
               <div className="flex items-center justify-between">
                 <img src="/src/assets/images/watchit.png" alt="watchit logo" className="h-10"/>

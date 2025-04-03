@@ -5,7 +5,7 @@ import { ArrowRight, CheckCheck } from "lucide-react";
 
 const Vision = () => {
   return (
-    <section id="vision" className="py-20 pb-40 relative overflow-hidden">
+    <section id="vision" className="py-20 pb-40 relative overflow-hidden border-2xl shadow-2xl">
       {/* Background effect */}
       <div className="absolute inset-0 bg-neural-pattern bg-cover bg-center opacity-10"></div>
       <div className="absolute inset-0 bg-gradient-to-b from-velatrix-dark to-velatrix-darkBlue opacity-95"></div>

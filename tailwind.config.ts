@@ -78,6 +78,9 @@ export default {
 				sm: 'calc(var(--radius) - 4px)'
 			},
 			keyframes: {
+				'border': {
+					to: { '--border-angle': '360deg' },
+				},
 				'accordion-down': {
 					from: {
 						height: '0'
@@ -113,7 +116,8 @@ export default {
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'pulse-glow': 'pulse-glow 4s ease-in-out infinite',
 				'float': 'float 6s ease-in-out infinite',
-				'gradient-shift': 'gradient-shift 3s ease infinite'
+				'gradient-shift': 'gradient-shift 3s ease infinite',
+				'border': 'border 4s linear infinite',
 			},
 			backgroundImage: {
 				'neural-pattern': "url('/lovable-uploads/b1d42a60-4d8f-4097-b212-56ae0b9fa4d1.png')",
