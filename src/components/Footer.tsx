@@ -4,16 +4,16 @@ import { GitHubLogoIcon, LinkedInLogoIcon, TwitterLogoIcon } from "@radix-ui/rea
 
 const Footer = () => {
   return (
-    <footer className="bg-velatrix-dark border-t border-velatrix-blue/20 py-12">
+    <footer className="bg-black border-t border-velatrix-blue/20 py-12">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-8 md:mb-0">
-            <div className="text-2xl font-bold tracking-widest text-gradient mb-2">VELATRIX</div>
+            <img src="/src/assets/images/logo_large.png" alt="Velatrix logo" className="h-10 mb-2"/>
             <p className="text-sm text-gray-400 max-w-sm">
               Web3 technology company providing solutions for intellectual property management and monetization.
             </p>
           </div>
-          
+
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 md:gap-16">
             <div>
               <h3 className="text-sm font-medium text-velatrix-blue mb-4 uppercase tracking-wider">Products</h3>

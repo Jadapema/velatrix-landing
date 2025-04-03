@@ -64,11 +64,12 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				velatrix: {
-					blue: "#4ADBF9",
-					purple: "#8366D9",
+					blue: "#fff",
+					purple: "#040b1b",
 					dark: "#0A0E17",
-					darkBlue: "#0F1B33",
-					gray: "#9CA3AF",
+					darkBlue: "#000",
+					gray: "#6e7278",
+					gray2: "#73758c",
 				}
 			},
 			borderRadius: {

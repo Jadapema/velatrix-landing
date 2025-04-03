@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
@@ -17,17 +16,17 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-velatrix-dark/80 backdrop-blur-lg py-4">
       <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
         <a href="/" className="flex items-center">
-          <span className="text-2xl font-bold tracking-widest text-gradient">VELATRIX</span>
+          <img src="/src/assets/images/logo_large.png" alt="Velatrix logo" className="h-10"/>
         </a>
-        
+
         {isMobile ? (
-          <div>
-            <Button 
-              variant="ghost" 
-              size="icon" 
-              onClick={toggleMenu}
-              aria-label="Toggle menu"
-            >
+            <div>
+              <Button
+                  variant="ghost"
+                  size="icon"
+                  onClick={toggleMenu}
+                  aria-label="Toggle menu"
+              >
               {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </Button>
             

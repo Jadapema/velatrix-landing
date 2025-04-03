@@ -60,7 +60,7 @@
 
 @layer components {
   .text-gradient {
-    @apply bg-gradient-to-r from-velatrix-blue to-velatrix-purple bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-velatrix-blue to-velatrix-gray bg-clip-text text-transparent;
   }
   
   .glow {
@@ -72,7 +72,31 @@
   }
   
   .cyber-card {
-    @apply bg-velatrix-darkBlue bg-opacity-70 backdrop-blur-md rounded-xl border border-velatrix-blue/30 shadow-lg shadow-velatrix-blue/10;
+    position: relative;
+    width: 100%;
+    box-shadow: rgb(0, 0, 0) 0px 0.25rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    border-width: 0.125rem;
+    border-style: solid;
+    border-color: transparent;
+    border-image: initial;
+    border-radius: 0.5rem;
+    background: radial-gradient(152.44% 100% at 50% 0%, rgba(23, 23, 28, 0) 0%, rgb(23, 23, 28) 100%) padding-box;
+
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0px;
+      margin: -0.0625rem;
+      border-radius: inherit;
+      background: linear-gradient(rgb(46, 47, 56), rgb(31, 31, 38));
+      z-index: 1;
+    }
+
+    & > * {
+      z-index: 2;
+    }
   }
   
   .cyber-grid {
