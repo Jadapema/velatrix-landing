@@ -81,6 +81,9 @@ export default {
 				'border': {
 					to: { '--border-angle': '360deg' },
 				},
+				'border-reverse': {
+					to: { '--border-angle': '-360deg' },
+				},
 				'accordion-down': {
 					from: {
 						height: '0'
@@ -117,7 +120,8 @@ export default {
 				'pulse-glow': 'pulse-glow 4s ease-in-out infinite',
 				'float': 'float 6s ease-in-out infinite',
 				'gradient-shift': 'gradient-shift 3s ease infinite',
-				'border': 'border 4s linear infinite',
+				'border': 'border 5s linear infinite',
+				'border-alt': 'border-reverse 7s linear infinite',
 			},
 			backgroundImage: {
 				'neural-pattern': "url('/lovable-uploads/b1d42a60-4d8f-4097-b212-56ae0b9fa4d1.png')",

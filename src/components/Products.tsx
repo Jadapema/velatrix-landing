@@ -24,9 +24,9 @@ const Products = () => {
             </p>
           </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto group">
           {/* Synapse Card */}
-          <Card className="cyber-card cyber-card-border-animated overflow-hidden">
+          <Card className="cyber-card cyber-card-border-animated-alt overflow-hidden group-hover:animate-border group-hover:animate-border-reverse">
             <CardHeader className="pb-4 flex align-middle justify-center text-center">
               <div className="flex items-center justify-between">
                 <img src="/src/assets/images/synapse.png" alt="Synapse logo" className="h-10"/>
@@ -56,7 +56,7 @@ const Products = () => {
           </Card>
           
           {/* Watchit Card */}
-          <Card className="cyber-card cyber-card-border-animated overflow-hidden ">
+          <Card className="cyber-card cyber-card-border-animated animate-border overflow-hidden ">
             <CardHeader className="pb-4 flex align-middle justify-center text-center">
               <div className="flex items-center justify-between">
                 <img src="/src/assets/images/watchit.png" alt="watchit logo" className="h-10"/>
