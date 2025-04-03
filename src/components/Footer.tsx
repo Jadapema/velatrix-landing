@@ -1,10 +1,11 @@
 
 import React from 'react';
 import { GitHubLogoIcon, LinkedInLogoIcon, TwitterLogoIcon } from "@radix-ui/react-icons";
+import GradientDivider from "@/components/ui/GradientDivider.tsx";
 
 const Footer = () => {
   return (
-    <footer className="bg-black border-t border-velatrix-blue/20 py-12">
+    <footer className="bg-black py-12">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-8 md:mb-0">

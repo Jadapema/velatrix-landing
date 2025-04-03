@@ -5,6 +5,7 @@ import Hero from '@/components/Hero';
 import Products from '@/components/Products';
 import Vision from '@/components/Vision';
 import Footer from '@/components/Footer';
+import GradientDivider from "@/components/ui/GradientDivider.tsx";
 
 const Index = () => {
   return (
@@ -13,7 +14,9 @@ const Index = () => {
       <Hero />
       <Products />
       <Vision />
+       <GradientDivider />
       <Footer />
+        <GradientDivider />
     </div>
   );
 };
