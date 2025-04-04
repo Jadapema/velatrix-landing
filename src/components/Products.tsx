@@ -23,7 +23,7 @@ const Products = () => {
               <span className="text-gradient">Our Ecosystem</span>
             </h2>
             <p className="mt-6 text-lg md:text-xl lg:text-2xl text-velatrix-gray2 max-w-5xl mx-auto">
-              Velatrix orchestrates a modular, secure, and scalable ecosystem of infrastructure, protocols, standards, and applications, providing the foundation for creators, developers, distributors, and communities to build, govern, and exchange value around creative intellectual property
+              Velatrix orchestrates a modular, secure, and scalable ecosystem of infrastructure, protocols, standards, and applications. It provides the foundation for creators, developers, distributors, and communities to build, govern, and exchange value around creative intellectual property
             </p>
           </div>
 
