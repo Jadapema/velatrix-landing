@@ -4,6 +4,7 @@ import { Menu, X } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { useSmoothScroll } from "@/hooks/use-smooth-scroll";
 import {LandingLinks} from "@/lib/utils.ts";
+import logo from '@/assets/images/logo_large.png';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,7 +25,7 @@ const Navbar = () => {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-velatrix-dark/80 backdrop-blur-lg py-4">
         <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
           <a href="/" className="flex items-center">
-            <img src="/src/assets/images/logo_large.png" alt="Velatrix logo" className="h-10"/>
+            <img src={logo} alt="Velatrix logo" className="h-10"/>
           </a>
 
           {isMobile ? (

@@ -22,11 +22,10 @@ const Hero = () => {
 
         {/* Hero content */}
           <div className="container relative z-10 px-4 md:px-6 text-center">
-              {/* Desktop Title */}
               <h1 className="hidden md:block text-4xl md:text-6xl lg:text-7xl font-bold mb-4 tracking-tight">
-                  <span className="text-gradient">Web3 technology for Intellectual</span>
+                  <span className="text-gradient">Web3 Technology for</span>
                   <br />
-                  <span className="text-gradient">Property management & monetization</span>
+                  <span className="text-gradient">the Next-Gen Creative IP</span>
               </h1>
 
               {/* Mobile Title */}
@@ -38,10 +37,8 @@ const Hero = () => {
                   <span className="text-gradient">management & monetization</span>
               </h1>
 
-              <p className="mt-6 text-lg md:text-xl lg:text-2xl text-velatrix-gray2 max-w-3xl mx-auto">
-                  At Velatrix, we are architecting the technological backbone of the next digital content era, unlocking
-                  new possibilities for creators, audiences, and distributors, setting a standard for innovation in the
-                  industry
+              <p className="mt-6 text-lg md:text-xl lg:text-2xl text-velatrix-gray2 max-w-4xl mx-auto">
+                  At Velatrix, we are architecting the technological backbone of the next digital content era, unlocking new possibilities for creators, audiences, and distributors, setting a standard for innovation in the industry
               </p>
 
               <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
