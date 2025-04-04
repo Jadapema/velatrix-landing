@@ -37,7 +37,7 @@ const Products = () => {
                   Blockchain Protocol
                 </span>
               </div>
-              <CardTitle className="text-3xl mt-4">Synapse</CardTitle>
+              <CardTitle className="text-3xl text-velatrix-orange mt-4">Synapse</CardTitle>
               <CardDescription className="text-gray-400">
                 Foundational blockchain layer
               </CardDescription>
@@ -73,7 +73,7 @@ const Products = () => {
                   Video Platform
                 </span>
               </div>
-              <CardTitle className="text-3xl mt-4">Watchit</CardTitle>
+              <CardTitle className="text-3xl text-velatrix-orange mt-4">Watchit</CardTitle>
               <CardDescription className="text-gray-400">
                 Flagship creator platform
               </CardDescription>
