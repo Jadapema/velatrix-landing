@@ -34,25 +34,25 @@ const Products = () => {
               <div className="flex items-center justify-between">
                 <img src={synapse} alt="Synapse logo" className="h-10"/>
                 <span className="text-xs text-velatrix-blue px-2 py-1 rounded-full border border-velatrix-blue opacity-70">
-                  Blockchain Protocol
+                  Protocol
                 </span>
               </div>
               <CardTitle className="text-3xl text-velatrix-orange mt-4">Synapse</CardTitle>
               <CardDescription className="text-gray-400">
-                Foundational blockchain layer
+                Foundational Blockchain Layer
               </CardDescription>
             </CardHeader>
             <Separator className="bg-gradient-to-r from-transparent via-white/20 to-transparent" />
             <CardContent className="pt-6">
               <p className="text-gray-300">
-                Blockchain protocol designed as the foundational layer to enable decentralized, scalable, and secure IP management.
+                A modular protocol redefining digital content infrastructure, enabling programmable ownership, sovereign monetization, and decentralized access coordination.
               </p>
             </CardContent>
             <CardFooter className="flex justify-between mt-auto">
               <Button variant="outline" size="sm" className="border-velatrix-blue text-velatrix-blue bg-transparent hover:bg-velatrix-blue/10">
                 <a href={LandingLinks.github.link} target="_blank" rel="noreferrer" className="flex items-center">
                   <GitHubLogoIcon className="mr-2 h-4 w-4" />
-                  Protocol Repository
+                  Github
                 </a>
               </Button>
 
@@ -70,18 +70,18 @@ const Products = () => {
               <div className="flex items-center justify-between">
                 <img src={watchit} alt="watchit logo" className="h-10"/>
                 <span className="text-xs text-velatrix-blue px-2 py-1 rounded-full border border-velatrix-blue opacity-70">
-                  Video Platform
+                  Platform
                 </span>
               </div>
               <CardTitle className="text-3xl text-velatrix-orange mt-4">Watchit</CardTitle>
               <CardDescription className="text-gray-400">
-                Flagship creator platform
+                Flagship Application
               </CardDescription>
             </CardHeader>
             <Separator className="bg-gradient-to-r from-transparent via-white/20 to-transparent" />
             <CardContent className="pt-6">
               <p className="text-gray-300">
-                Our flagship video platform, where creators control their IP rights, choose their revenue model, and connect with fans directly. Without ads nor opaque algorithms.
+                A streaming platform where creators control their IP, set their own terms, and connect with audiences, free from ads, algorithms, and gatekeepers.
               </p>
             </CardContent>
             <CardFooter className="flex justify-between">
@@ -89,7 +89,7 @@ const Products = () => {
                       className="border-velatrix-blue text-velatrix-blue bg-transparent hover:bg-velatrix-blue/10">
                 <a href={LandingLinks.watchitMovie.link} target="_blank" rel="noreferrer" className="flex items-center">
                   <VideoIcon className="mr-2 h-4 w-4"/>
-                  Explore Platform
+                  Explore
                 </a>
               </Button>
               <div className="flex space-x-4 items-center">

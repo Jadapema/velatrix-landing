@@ -34,7 +34,7 @@ const Vision = () => {
 
               <div className="pl-4 border-l-2 border-velatrix-orange my-8 py-4">
                 <p className="italic text-xl">
-                  "At Velatrix, we believe it’s time for decentralized ecosystems to redefine the incentives that shape today’s online economy." - Velatrix Team
+                  "At Velatrix, we believe it’s time for decentralized ecosystems to redefine the incentives that shape today’s online economy."
                 </p>
               </div>
 
