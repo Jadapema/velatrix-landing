@@ -1,8 +1,6 @@
-
 import React from 'react';
-import { GitHubLogoIcon, LinkedInLogoIcon, TwitterLogoIcon } from "@radix-ui/react-icons";
-import GradientDivider from "@/components/ui/GradientDivider.tsx";
 import {LandingLinks} from "@/lib/utils.ts";
+import logo from '@/assets/images/logo_large.png';
 
 const Footer = () => {
   return (
@@ -10,7 +8,7 @@ const Footer = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-8 md:mb-0">
-            <img src="/src/assets/images/logo_large.png" alt="Velatrix logo" className="h-10 mb-2"/>
+            <img src={logo} alt="Velatrix logo" className="h-10 mb-2"/>
             <p className="text-sm text-gray-400 max-w-sm">
               Web3 technology company providing solutions for intellectual property management and monetization.
             </p>

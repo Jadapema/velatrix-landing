@@ -70,6 +70,7 @@ export default {
 					darkBlue: "#000",
 					gray: "#6e7278",
 					gray2: "#73758c",
+					orange: "#FFAB00",
 				}
 			},
 			borderRadius: {

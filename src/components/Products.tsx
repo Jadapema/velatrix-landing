@@ -6,6 +6,9 @@ import { Button } from "@/components/ui/button";
 import XIcon from '@/components/icons/XIcon';
 import MediumIcon from '@/components/icons/MediumIcon';
 import {LandingLinks} from "@/lib/utils.ts";
+import synapse from '@/assets/images/synapse.png';
+import watchit from '@/assets/images/watchit.png';
+
 const Products = () => {
   return (
       <section id="products" className="py-40 bg-velatrix-darkBlue relative">
@@ -19,8 +22,8 @@ const Products = () => {
             <h2 className="text-3xl md:text-5xl font-bold mb-4">
               <span className="text-gradient">Our Ecosystem</span>
             </h2>
-            <p className="mt-6 text-lg md:text-xl lg:text-2xl text-velatrix-gray2 max-w-3xl mx-auto">
-              At the core of Velatrix is the development of an architecture that can support both creators and developers of decentralized applications focused on IP ownership, monetization, and distribution
+            <p className="mt-6 text-lg md:text-xl lg:text-2xl text-velatrix-gray2 max-w-5xl mx-auto">
+              Velatrix orchestrates a modular, secure, and scalable ecosystem of infrastructure, protocols, standards, and applications, providing the foundation for creators, developers, distributors, and communities to build, govern, and exchange value around creative intellectual property
             </p>
           </div>
 
@@ -29,7 +32,7 @@ const Products = () => {
           <Card className="cyber-card cyber-card-border-animated-alt overflow-hidden group-hover:animate-border group-hover:animate-border-reverse">
             <CardHeader className="pb-4 flex align-middle justify-center text-center">
               <div className="flex items-center justify-between">
-                <img src="/src/assets/images/synapse.png" alt="Synapse logo" className="h-10"/>
+                <img src={synapse} alt="Synapse logo" className="h-10"/>
                 <span className="text-xs text-velatrix-blue px-2 py-1 rounded-full border border-velatrix-blue opacity-70">
                   Blockchain Protocol
                 </span>
@@ -42,7 +45,7 @@ const Products = () => {
             <Separator className="bg-gradient-to-r from-transparent via-white/20 to-transparent" />
             <CardContent className="pt-6">
               <p className="text-gray-300">
-                Blockchain protocol designed as the foundational layer to enable decentralized, scalable, and secure IP management
+                Blockchain protocol designed as the foundational layer to enable decentralized, scalable, and secure IP management.
               </p>
             </CardContent>
             <CardFooter className="flex justify-between mt-auto">
@@ -65,7 +68,7 @@ const Products = () => {
           <Card className="cyber-card cyber-card-border-animated animate-border overflow-hidden ">
             <CardHeader className="pb-4 flex align-middle justify-center text-center">
               <div className="flex items-center justify-between">
-                <img src="/src/assets/images/watchit.png" alt="watchit logo" className="h-10"/>
+                <img src={watchit} alt="watchit logo" className="h-10"/>
                 <span className="text-xs text-velatrix-blue px-2 py-1 rounded-full border border-velatrix-blue opacity-70">
                   Video Platform
                 </span>
@@ -78,7 +81,7 @@ const Products = () => {
             <Separator className="bg-gradient-to-r from-transparent via-white/20 to-transparent" />
             <CardContent className="pt-6">
               <p className="text-gray-300">
-                Our flagship video platform, where creators control their IP rights, choose their revenue model, and connect with fans directly. Without ads nor opaque algorithms
+                Our flagship video platform, where creators control their IP rights, choose their revenue model, and connect with fans directly. Without ads nor opaque algorithms.
               </p>
             </CardContent>
             <CardFooter className="flex justify-between">

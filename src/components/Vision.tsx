@@ -7,33 +7,32 @@ import {LandingLinks} from "@/lib/utils.ts";
 const Vision = () => {
   return (
       <>
-    <section id="vision" className="py-20 pb-40 relative overflow-hidden">
+    <section id="vision" className="py-20 pb-20 relative overflow-hidden">
       {/* Background effect */}
       <div className="absolute inset-0 bg-neural-pattern bg-cover bg-center opacity-10"></div>
       <div className="absolute inset-0 bg-gradient-to-b from-velatrix-dark to-velatrix-darkBlue opacity-95"></div>
       
       {/* Glowing orbs */}
-      <div className="absolute bottom-10 left-10 w-80 h-80 rounded-full bg-velatrix-purple/10 blur-3xl"></div>
-      <div className="absolute top-20 right-10 w-60 h-60 rounded-full bg-velatrix-blue/10 blur-3xl"></div>
+      <div className="absolute top-10 left-10 w-80 h-80 rounded-full bg-white/10 blur-3xl"></div>
+      <div className="absolute top-32 right-10 w-60 h-60 rounded-full bg-white/10 blur-3xl"></div>
 
       <div id="parent" className="container z-10 mx-auto px-0 md:px-8 overflow-hidden">
         <div className="max-w-5xl mx-auto rounded-2xl relative">
-          <div className='absolute top-0 left-0 w-full z-10'>
-            <img src="/src/assets/images/vision-top.svg" alt="Vision" className="w-full h-28 object-cover" />
-          </div>
+          {/*<div className='absolute top-0 left-0 w-full z-10'>*/}
+          {/*  <img src="/src/assets/images/vision-top.svg" alt="Vision" className="w-full h-28 object-cover" />*/}
+          {/*</div>*/}
 
-          <div className="px-10 p-4">
-            <div
-                className="flex relative w-full items-center justify-center mt-8 z-20">
-              <Badge className="mb-8 bg-gray-500 text-velatrix-blue hover:bg-velatrix-blue/30">Our Vision</Badge>
+          <div className="p-4">
+            <div className="flex relative w-full items-start justify-start mt-8 z-20">
+              <Badge className="mb-8 bg-velatrix-orange text-velatrix-blue hover:bg-velatrix-orange/30 cursor-default">Our Vision</Badge>
             </div>
 
-            <h2 className="text-xl md:text-5xl font-bold mb-10 md:px-24 leading-tight ">
-              <span className="text-gradient text-center block mt-2">The future of content is a fairer, decentralized, creator-first media economy</span>
+            <h2 className="text-xl md:text-5xl font-bold mb-10 leading-tight w-full">
+              <span className="text-gradient block w-full mt-2">The future of content is a fairer, decentralized, creator-first media economy</span>
             </h2>
 
             <div className="space-y-6 text-lg">
-              <p className="text-velatrix-gray2 text-center">
+              <p className="text-velatrix-gray2">
                 We are building the infrastructure to support the next era of digital content. Tools for creators to truly own their work, define bespoke revenue models, and connect directly with audiences
               </p>
 
@@ -43,8 +42,8 @@ const Vision = () => {
                 </p>
               </div>
 
-              <div className="space-y-4 mt-16 opacity-70 pl-8">
-                <div className="flex items-start">
+              <div className="space-y-4 mt-16 opacity-70">
+                <div className="flex items-center">
                   <CheckCheck className="text-velatrix-blue mr-3 h-6 w-6 mt-0.5 flex-shrink-0" />
                   <p>Creator-owned intellectual property with blockchain verification and protection</p>
                 </div>
@@ -66,7 +65,7 @@ const Vision = () => {
         </div>
       </div>
 
-      <div className="mt-24 pt-10 text-center opacity-90">
+      <div className="mt-18 text-center opacity-90">
         <h3 className="text-2xl font-bold mb-4 px-4 md:px-0">Owned by creators. Powered by fans. Enabled by Velatrix.</h3>
         <a
             href={LandingLinks.medium.link}
