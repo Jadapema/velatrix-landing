@@ -20,8 +20,7 @@ const Products = () => {
               <span className="text-gradient">Our Ecosystem</span>
             </h2>
             <p className="mt-6 text-lg md:text-xl lg:text-2xl text-velatrix-gray2 max-w-3xl mx-auto">
-              At the core of Velatrix, we're building a comprehensive ecosystem to revolutionize how creators manage,
-              monetize, and share their content.
+              At the core of Velatrix is the development of an architecture that can support both creators and developers of decentralized applications focused on IP ownership, monetization, and distribution
             </p>
           </div>
 
@@ -43,10 +42,10 @@ const Products = () => {
             <Separator className="bg-gradient-to-r from-transparent via-white/20 to-transparent" />
             <CardContent className="pt-6">
               <p className="text-gray-300">
-                A blockchain protocol designed as the foundational layer to enable decentralized, scalable, secure IP management for the creator economy.
+                Blockchain protocol designed as the foundational layer to enable decentralized, scalable, and secure IP management
               </p>
             </CardContent>
-            <CardFooter className="flex justify-between">
+            <CardFooter className="flex justify-between mt-auto">
               <Button variant="outline" size="sm" className="border-velatrix-blue text-velatrix-blue bg-transparent hover:bg-velatrix-blue/10">
                 <a href={LandingLinks.github.link} target="_blank" rel="noreferrer" className="flex items-center">
                   <GitHubLogoIcon className="mr-2 h-4 w-4" />
@@ -79,7 +78,7 @@ const Products = () => {
             <Separator className="bg-gradient-to-r from-transparent via-white/20 to-transparent" />
             <CardContent className="pt-6">
               <p className="text-gray-300">
-                Our flagship video platform, where creators control their IP rights, choose their revenue model, and connect with fans directly. Without ads nor opaque algorithms.
+                Our flagship video platform, where creators control their IP rights, choose their revenue model, and connect with fans directly. Without ads nor opaque algorithms
               </p>
             </CardContent>
             <CardFooter className="flex justify-between">

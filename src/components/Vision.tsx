@@ -29,17 +29,17 @@ const Vision = () => {
             </div>
 
             <h2 className="text-xl md:text-5xl font-bold mb-10 md:px-24 leading-tight ">
-              <span className="text-gradient text-center block mt-2">The future of content is a fairer, decentralized, creator-first media economy.</span>
+              <span className="text-gradient text-center block mt-2">The future of content is a fairer, decentralized, creator-first media economy</span>
             </h2>
 
             <div className="space-y-6 text-lg">
               <p className="text-velatrix-gray2 text-center">
-                We are building infrastructure for the next era of digital content. Tools for creators to truly own their work, define their revenue models, and connect directly with audiences in an environment that incentivizes content quality over virality.
+                We are building the infrastructure to support the next era of digital content. Tools for creators to truly own their work, define bespoke revenue models, and connect directly with audiences
               </p>
 
               <div className="pl-4 border-l-2 border-velatrix-blue my-8 opacity-90 py-4">
                 <p className="italic text-xl">
-                  "At Velatrix, we believe in a digital ecosystem where creators have true autonomy, transparent compensation, and direct relationships with their audiences."
+                  "At Velatrix, we beileve it is time for decentralized ecosystems to redefine the incentives shaping nowadays' online economic model."
                 </p>
               </div>
 

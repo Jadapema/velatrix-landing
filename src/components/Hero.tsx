@@ -21,38 +21,50 @@ const Hero = () => {
              style={{animationDelay: '2s'}}></div>
 
         {/* Hero content */}
-        <div className="container relative z-10 px-4 md:px-6 text-center">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4 tracking-tight">
-            <span className="text-gradient">Web3 Solutions for</span>
-            <br/>
-            <span className="text-gradient">Creator Empowerment</span>
-          </h1>
+          <div className="container relative z-10 px-4 md:px-6 text-center">
+              {/* Desktop Title */}
+              <h1 className="hidden md:block text-4xl md:text-6xl lg:text-7xl font-bold mb-4 tracking-tight">
+                  <span className="text-gradient">Web3 technology for Intellectual</span>
+                  <br />
+                  <span className="text-gradient">Property management & monetization</span>
+              </h1>
 
-          <p className="mt-6 text-lg md:text-xl lg:text-2xl text-velatrix-gray2 max-w-3xl mx-auto">
-            Building infrastructure for the next era of digital content.
-            Tools for creators to truly own their work, define their revenue models, and connect directly with
-            audiences.
-          </p>
+              {/* Mobile Title */}
+              <h1 className="block md:hidden text-4xl font-bold mb-4 tracking-tight">
+                  <span className="text-gradient">Web3 technology for</span>
+                  <br />
+                  <span className="text-gradient">Intellectual Property</span>
+                  <br />
+                  <span className="text-gradient">management & monetization</span>
+              </h1>
 
-          <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
-            <Button size="lg"
-                    className="bg-gradient-to-r from-velatrix-blue to-velatrix-blue hover:opacity-70 opacity-90 text-black font-medium">
-              <a href={LandingLinks.watchitMovie.link} target="_blank" rel="noreferrer" className="flex items-center">
-                Explore Watchit
-                <ArrowRight className="ml-2 h-5 w-5"/>
-              </a>
-            </Button>
-            <Button variant="outline" size="lg" className="border-velatrix-blue text-white opacity-90 hover:bg-velatrix-blue/10">
-              <a href={LandingLinks.github.link} target="_blank" rel="noreferrer">
-                View Protocol
-              </a>
-            </Button>
+              <p className="mt-6 text-lg md:text-xl lg:text-2xl text-velatrix-gray2 max-w-3xl mx-auto">
+                  At Velatrix, we are architecting the technological backbone of the next digital content era, unlocking
+                  new possibilities for creators, audiences, and distributors, setting a standard for innovation in the
+                  industry
+              </p>
+
+              <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
+                  <Button size="lg"
+                          className="bg-gradient-to-r from-velatrix-blue to-velatrix-blue hover:opacity-70 opacity-90 text-black font-medium">
+                      <a href={LandingLinks.watchitMovie.link} target="_blank" rel="noreferrer"
+                         className="flex items-center">
+                          Explore Watchit
+                          <ArrowRight className="ml-2 h-5 w-5"/>
+                      </a>
+                  </Button>
+                  <Button variant="outline" size="lg"
+                          className="border-velatrix-blue text-white opacity-90 hover:bg-velatrix-blue/10">
+                      <a href={LandingLinks.github.link} target="_blank" rel="noreferrer">
+                          View Protocol
+                      </a>
+                  </Button>
+              </div>
           </div>
-        </div>
-        <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <a href="#products" onClick={(e) => handleLinkClick(e, 'products')} aria-label="Scroll down">
-            <ArrowRight className="h-8 w-8 rotate-90 text-velatrix-blue"/>
-          </a>
+          <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+              <a href="#products" onClick={(e) => handleLinkClick(e, 'products')} aria-label="Scroll down">
+                  <ArrowRight className="h-8 w-8 rotate-90 text-velatrix-blue"/>
+              </a>
         </div>
       </div>
   );
