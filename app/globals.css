@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Dark mode by default for Velatrix Web3 theme */
+    --background: 222 47% 7%;
+    --foreground: 210 40% 98%;
+
+    --card: 222 47% 10%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222 47% 10%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 196 86% 63%;
+    --primary-foreground: 222 47% 10%;
+
+    --secondary: 260 54% 63%;
+    --secondary-foreground: 222 47% 10%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 260 54% 63%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 196 86% 63%;
+    
+    --radius: 0.75rem;
+
+    --sidebar-background: 222 47% 7%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 196 86% 63%;
+    --sidebar-primary-foreground: 222 47% 10%;
+    --sidebar-accent: 260 54% 63%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 217.2 32.6% 17.5%;
+    --sidebar-ring: 196 86% 63%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-velatrix-dark text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer components {
+  .text-gradient {
+    @apply bg-gradient-to-r from-velatrix-blue to-velatrix-gray bg-clip-text text-transparent;
+  }
+  
+  .glow {
+    @apply relative;
+  }
+  
+  .glow::before {
+    @apply content-[''] absolute -inset-0.5 bg-gradient-to-r from-velatrix-blue to-velatrix-purple rounded-lg opacity-70 blur-sm animate-pulse-glow;
+  }
+  
+  .cyber-card {
+    position: relative;
+    width: 100%;
+    box-shadow: rgb(0, 0, 0) 0px 0.25rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    border-width: 0.125rem;
+    border-style: solid;
+    border-color: transparent;
+    border-image: initial;
+    border-radius: 0.5rem;
+    background: radial-gradient(152.44% 100% at 50% 0%, rgba(23, 23, 28, 0) 0%, rgb(23, 23, 28) 100%) padding-box;
+  }
+
+  .cyber-card::before {
+    content: "";
+    position: absolute;
+    inset: 0px;
+    margin: -0.0625rem;
+    border-radius: inherit;
+    background: linear-gradient(rgb(46, 47, 56), rgb(31, 31, 38));
+    z-index: 1;
+  }
+
+  .cyber-card > * {
+    z-index: 2;
+  }
+
+  .cyber-card-border-vision {
+    @apply [background:linear-gradient(to_bottom,theme(colors.gray.950/80),theme(colors.gray.800/90))_padding-box,conic-gradient(from_var(--border-angle),theme(colors.slate.600/.48)_80%,_theme(colors.slate.500)_86%,_theme(colors.slate.300)_90%,_theme(colors.slate.500)_94%,_theme(colors.slate.600/.48))_border-box] rounded-2xl border border-transparent animate-border;
+  }
+
+  .cyber-card-border-animated {
+    @apply [background:linear-gradient(45deg,#172033,theme(colors.slate.800)_50%,#172033)_padding-box,conic-gradient(from_var(--border-angle),theme(colors.slate.600/.48)_80%,_theme(colors.slate.500)_86%,_theme(colors.slate.300)_90%,_theme(colors.slate.500)_94%,_theme(colors.slate.600/.48))_border-box] rounded-2xl border border-transparent;
+  }
+  
+  .cyber-card-border-animated-alt {
+    @apply [background:linear-gradient(45deg,#172033,theme(colors.slate.800)_50%,#172033)_padding-box,conic-gradient(from_var(--border-angle),theme(colors.slate.600/.48)_80%,_theme(colors.slate.500)_86%,_theme(colors.slate.300)_90%,_theme(colors.slate.500)_94%,_theme(colors.slate.600/.48))_border-box] rounded-2xl border border-transparent animate-border-alt;
+  }
+  
+  .cyber-grid {
+    @apply bg-cyber-grid bg-[size:40px_40px];
+  }
+
+  @property --border-angle {
+    inherits: false;
+    initial-value: 0deg;
+    syntax: '<angle>';
+  }
+} 

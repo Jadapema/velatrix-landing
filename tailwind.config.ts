@@ -1,13 +1,11 @@
-
 import type { Config } from "tailwindcss";
 
-export default {
+const config = {
 	darkMode: ["class"],
 	content: [
 		"./pages/**/*.{ts,tsx}",
 		"./components/**/*.{ts,tsx}",
 		"./app/**/*.{ts,tsx}",
-		"./src/**/*.{ts,tsx}",
 	],
 	prefix: "",
 	theme: {
@@ -125,7 +123,7 @@ export default {
 				'border-alt': 'border-reverse 7s linear infinite',
 			},
 			backgroundImage: {
-				'neural-pattern': "url('/lovable-uploads/b1d42a60-4d8f-4097-b212-56ae0b9fa4d1.png')",
+				'neural-pattern': "url('/assets/images/lovable-uploads-b1d42a60-4d8f-4097-b212-56ae0b9fa4d1.png')",
 				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
 				'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
 				'cyber-grid': 'linear-gradient(to right, rgba(74, 219, 249, 0.1) 1px, transparent 1px), linear-gradient(to bottom, rgba(74, 219, 249, 0.1) 1px, transparent 1px)'
@@ -134,3 +132,5 @@ export default {
 	},
 	plugins: [require("tailwindcss-animate")],
 } satisfies Config;
+
+export default config;

@@ -1,4 +1,4 @@
-# Welcome to your Lovable project
+# Welcome to your Velatrix Landing Page
 
 ## Project info
 
@@ -52,9 +52,9 @@ npm run dev
 
 ## What technologies are used for this project?
 
-This project is built with .
+This project is built with:
 
-- Vite
+- Next.js
 - TypeScript
 - React
 - shadcn-ui
@@ -64,6 +64,8 @@ This project is built with .
 
 Simply open [Lovable](https://lovable.dev/projects/7533e25d-934c-4b76-ba8b-a3ef9f8204ee) and click on Share -> Publish.
 
+Alternatively, you can deploy on Vercel, which is the recommended hosting platform for Next.js applications.
+
 ## I want to use a custom domain - is that possible?
 
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Vercel or Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
