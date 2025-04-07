@@ -29,7 +29,7 @@ const Vision = () => {
 
             <div className="space-y-6 text-lg">
               <p className="text-velatrix-gray2">
-                We are building infrastructure for the next era of digital content. Tools for creators to truly own their work, define their revenue models, and connect directly with audiences. An ecosystem where governance, economic freedom, and market dynamics transparently shape content quality and value distribution
+                We are building infrastructure for the next era of digital content. Tools for creators to truly own their work, define their revenue models, and connect directly with audiences. An ecosystem where governance, economic freedom, and market dynamics transparently shape content quality and value distribution.
               </p>
 
               <div className="pl-4 border-l-2 border-velatrix-orange my-8 py-4">

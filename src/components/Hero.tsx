@@ -27,7 +27,7 @@ const Hero = () => {
               </h1>
 
               <p className="mt-6 text-lg md:text-xl lg:text-2xl text-velatrix-gray2 max-w-4xl mx-auto">
-                  At Velatrix, we are architecting the technological backbone of the next digital content era, unlocking new possibilities for creators, audiences, and distributors, setting a standard for innovation in the industry
+                  At Velatrix, we are architecting the technological backbone of the next digital content era, unlocking new possibilities for creators, audiences, and distributors, setting a standard for innovation in the industry.
               </p>
 
               <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
